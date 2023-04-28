@@ -22,7 +22,7 @@ const RightNav = () => {
           <FaGoogle />
           Login With Google
         </Button>
-        <Button variant="outline-secondary w-100 d-flex justify-content-center align-items-center gap-2">
+        <Button variant="outline-dark w-100 d-flex justify-content-center align-items-center gap-2">
           <FaGithub></FaGithub> Login With Github
         </Button>
       </div>
