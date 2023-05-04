@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button, Container, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../../Provider/AuthProvider";
+import useTitle from "../../../../Hooks/useTitle";
 
 const Login = () => {
   const {signInUser} = useContext(AuthContext);
@@ -22,6 +23,10 @@ const Login = () => {
       console.log(err.message)
     })
   }
+
+
+
+  useTitle("Login")
   return (
     <Container className="w-25 mx-auto mt-3">
       <h3>Please Login</h3>

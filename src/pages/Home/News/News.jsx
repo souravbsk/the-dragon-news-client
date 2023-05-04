@@ -3,10 +3,12 @@ import { Button, Card, Row } from "react-bootstrap";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link, useLoaderData } from "react-router-dom";
 import EditorInsight from "../EditorInsight/EditorInsight";
+import useTitle from "../../../Hooks/useTitle";
 
 const News = () => {
   const news = useLoaderData();
   const { _id, title, image_url, details, category_id } = news;
+  useTitle("News")
 
   return (
     <div>

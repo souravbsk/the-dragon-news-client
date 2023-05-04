@@ -46,7 +46,6 @@ const handleSingOut = () => {
                     </Button>
                   </Link>
                 )}
-
             </Nav>
           </Navbar.Collapse>
         </Container>

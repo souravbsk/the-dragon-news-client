@@ -4,6 +4,7 @@ import { Button, Container, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../../Provider/AuthProvider";
 import { useState } from "react";
+import useTitle from "../../../../Hooks/useTitle";
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
@@ -34,6 +35,7 @@ const handleChecked = (e) => {
 }
 
 
+useTitle("Register")
   return (
     <Container className="w-25 mx-auto mt-3">
       <h3>Please Register</h3>
